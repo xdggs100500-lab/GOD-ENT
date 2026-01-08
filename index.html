@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>REMIDUS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Small round GIF logo -->
+  <img src="https://image2url.com/r2/bucket3/gifs/1767872678147-f968d96c-8131-49a3-bc49-2ce13272f761.gif" class="logo" alt="Logo">
+
+  <!-- Straight line of avatars with names -->
+  <div class="orbit" id="orbit">
+  <div class="profile">
+    <img src="https://i.pinimg.com/736x/83/06/4e/83064eb856f1a32778153a1b54645355.jpg" alt="Avatar 1">
+    <p class="name">Takani</p>
+  </div>
+  <div class="profile">
+    <img src="https://i.pinimg.com/736x/5d/7a/a6/5d7aa60e4d091f252469f4277e47b1c0.jpg" alt="Avatar 2">
+    <p class="name">Cheska</p>
+  </div>
+  <div class="profile">
+    <img src="https://i.pinimg.com/736x/2a/62/14/2a6214cb230d474c5938e2d547ef8145.jpg" alt="Avatar 3">
+    <p class="name">Kyoso</p>
+  </div>
+  <div class="profile">
+    <img src="https://i.pinimg.com/1200x/73/96/73/739673f226cd9c686a573e17891cc729.jpg" alt="Avatar 4">
+    <p class="name">Sev</p>
+  </div>
+  <div class="profile">
+    <img src="https://i.pinimg.com/1200x/56/db/9e/56db9e36e4f0ec07538ec118a1bdfe85.jpg" alt="Avatar 5">
+    <p class="name">Sob</p>
+  </div>
+  <div class="profile">
+    <img src="https://i.pinimg.com/736x/b9/71/cb/b971cb887cf753d0254c206c832abbe4.jpg" alt="Avatar 6">
+    <p class="name">Yang</p>
+  </div>
+</div>
+
+  
+
+  <!-- Join button -->
+  <a class="join" href="https://discord.gg/JwXCF6yh" target="_blank">JOIN</a>
+
+  <!-- YouTube background music (Lil Peep - Nuts, muted autoplay starting at 15s) -->
+  <iframe id="bgMusic" width="0" height="0"
+          src="https://www.youtube.com/embed/JB3Ukw4D9cs?autoplay=1&loop=1&playlist=JB3Ukw4D9cs&mute=1&start=15"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+  </iframe>
+
+</div>
+
+<script>
+  // Automatically unmute on first click anywhere
+  let musicUnmuted = false;
+  document.addEventListener('click', () => {
+    if (!musicUnmuted) {
+      const bgMusic = document.getElementById('bgMusic');
+      bgMusic.src = "https://www.youtube.com/embed/JB3Ukw4D9cs?autoplay=1&loop=1&playlist=JB3Ukw4D9cs&mute=0&start=15";
+      musicUnmuted = true;
+    }
+  });
+</script>
+
+</body>
+</html>
