@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>REMIDUS</title>
+  <title>GOD$ENT</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
